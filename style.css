@@ -142,18 +142,19 @@ nav a:hover {
   z-index: 1;
 }
 
-/* Essential for making the entire card clickable */
+/* --- Fix for clickable area overlap --- */
 .card-link-wrapper {
-    display: block;
-    height: 100%;
-    color: inherit; 
-    position: relative; 
+  display: inline-block;
+  position: static;
+  width: 100%;
+  height: auto;
+  color: inherit;
+  text-decoration: none;
 }
-.card-link-wrapper1 {
-    display: block;
-    height: 100%;
-    color: inherit; 
-    position: relative; 
+
+.event-card {
+  position: relative;
+  z-index: 1;
 }
 
 .event-card ul {
@@ -469,4 +470,5 @@ footer .heading {
         height: 60px;
     }
     
+
 }

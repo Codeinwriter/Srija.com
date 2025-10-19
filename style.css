@@ -1,0 +1,472 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* --- Global Styles --- */
+:root {
+  --primary-color: #1E88E5; /* Professional Blue */
+  --secondary-color: #4CAF50; /* Green for links/accents */
+  --background-light: #f8f8f8; /* Light gray background */
+  --text-dark: #333;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff; /* White background for main body */
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+.container {
+  width: 1200px; /* Standard container width */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0 0 40px 0;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--primary-color);
+  text-align: left;
+}
+
+/* --- Top News Bar --- */
+.top-bar {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.top-bar p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* --- Header & Navigation --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo {
+  height: 80px; 
+  width: auto;
+}
+
+nav a {
+  color: var(--text-dark);
+  font-size: 16px;
+  padding: 10px 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* --- Slider/Banner --- */
+.slider {
+  margin-bottom: 40px;
+  border: 2px solid rgba(128, 128, 128, 0.63);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.slider img {
+  display: block;
+}
+
+/* --- Main Content Sections (3-Column Layout) --- */
+.main-content-row {
+  width: 100%;
+  padding: 50px 0;
+  display: flex; 
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.main-section {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.col-3 {
+  flex: 1;
+}
+
+.event-card {
+  background-color: #fff;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+  overflow: hidden;
+  min-height: 450px; 
+  position: relative; 
+}
+
+.card-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--primary-color);
+  text-align: center;
+  margin: 0;
+  padding: 15px 10px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Essential for making the entire card clickable */
+.card-link-wrapper {
+    display: block;
+    height: 100%;
+    color: inherit; 
+    position: relative; 
+}
+.card-link-wrapper1 {
+    display: block;
+    height: 100%;
+    color: inherit; 
+    position: relative; 
+}
+
+.event-card ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.event-card ul li {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #eee;
+  font-size: 15px;
+  color: var(--text-dark); /* Ensure text is readable on white background */
+}
+
+.event-card ul li:last-child {
+  border-bottom: none;
+}
+
+.news-list {
+  height: 350px; 
+  padding: 0 10px;
+}
+
+.event-date {
+  background: var(--secondary-color);
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  padding: 10px;
+  margin-right: 15px;
+  line-height: 1.2;
+  border-radius: 4px;
+}
+
+#info h3 {
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+#info p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+/* --- About Us Section --- */
+.about-us {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-content {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.about-us h4 {
+  font-size: 22px;
+  color: var(--secondary-color);
+  margin: -10px 0 20px 0;
+}
+
+.about-us p {
+  line-height: 1.7;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.about-us img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Testimonials Section --- */
+.testimonial-section {
+  padding-bottom: 30px;
+}
+
+.testimonial-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.testimonial-card {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-left: 20px;
+}
+
+.testimonial-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Gallery Section --- */
+#Gallery-grid {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+#Gallery-grid img {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover; 
+  border: 4px solid var(--primary-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#Gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Footer --- */
+footer {
+  background-color: rgba(0, 0, 45, 0.966); 
+  color: #fff;
+  padding: 50px 0 20px 0 !important; 
+  border-radius: 10px;
+}
+
+footer .heading {
+  color: #fff;
+  border-bottom-color: var(--primary-color);
+}
+
+#media {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    color: var(--primary-color);
+}
+
+.social-link img {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #4d4d4d;
+}
+
+/* ======================================================= */
+/* --- MEDIA QUERIES FOR RESPONSIVENESS (<= 900px) --- */
+/* ======================================================= */
+
+@media (max-width: 1200px) {
+    /* Adjust container size for smaller desktops/large tablets */
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    /* --- General Layout & Container --- */
+    .container {
+        padding: 0 15px; 
+    }
+
+    /* --- Header & Navigation (FORCED HORIZONTAL) --- */
+    header {
+        flex-direction: column; /* Logo above nav */
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: nowrap; /* CRUCIAL: Keeps links in one row */
+        justify-content: center;
+        overflow-x: auto; /* Allows horizontal scrolling if necessary */
+        padding-bottom: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 10px;
+        flex-shrink: 0; /* Prevents links from shrinking */
+        display: inline-block; /* Ensure horizontal display */
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    /* --- 3-Column Section Stacking --- */
+    .main-content-row {
+        flex-direction: column; /* Stacks columns */
+        gap: 40px; 
+        padding: 30px 0;
+    }
+
+    .col-3 {
+        width: 100%; 
+        min-height: auto; 
+    }
+    
+    .event-card {
+        max-width: 500px; 
+        margin: 0 auto;
+    }
+
+    .card-heading {
+        font-size: 20px;
+    }
+
+    /* --- About Us Section --- */
+    .about-us {
+        flex-direction: column; /* Stacks image and text */
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .about-content {
+        width: 100%;
+        order: -1; /* Place content (with heading) before the image */
+    }
+
+    .about-us img {
+        width: 100%; 
+        max-width: 500px; 
+        margin: 0 auto;
+    }
+
+    .heading {
+        font-size: 30px;
+        text-align: center;
+        border-bottom-width: 1px;
+    }
+
+    /* --- Gallery, Testimonials, Footer --- */
+    #Gallery-grid {
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+    #Gallery-grid img {
+    height: 150px; /* This height might look too tall for small, narrow images */
+    object-fit: cover;
+}
+    
+    .testimonial-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #media {
+        gap: 30px;
+    }
+
+    .social-link img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    /* --- Extra adjustments for very small phones --- */
+    .top-bar p {
+        font-size: 14px;
+    }
+    
+    /* Nav is already handled in 900px block to stay horizontal */
+
+    /* Adjust padding for overall page content */
+    .main-section {
+        padding: 40px 0;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+    
+}

@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="Phone.css" type="text/css" media="all" />
     <title>Sri Srija E.M High School</title>
+    <style>
+      /* Fix for card-link-wrapper overlapping issue */
+      .card-link-wrapper {
+        display: inline-block;
+        position: static;
+        width: 100%;
+        height: auto;
+        color: inherit;
+        text-decoration: none;
+      }
+      .event-card {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
   </head>
   <body>
     <div class="top-bar">
@@ -29,6 +44,7 @@
       
       <section class="main-content-row" style="background:#f8f8f8;">
         
+        <!-- Newsletters Card -->
         <div class="col-3 event-card news-link-card" id="newsletters-section">
           <a href="Newsletters.html" target="_blank" class="card-link-wrapper">
             <h2 class="card-heading">Newsletters</h2>
@@ -52,6 +68,7 @@
           </a>
         </div>
         
+        <!-- Events Card -->
         <div class="col-3 event-card" id="Event">
           <h2 class="card-heading">Events</h2>
           <ul>
@@ -59,6 +76,7 @@
           </ul>
         </div>
         
+        <!-- Notice Board Card -->
         <div class="col-3 event-card">
           <h2 class="card-heading">Notice Board</h2>
           <ul>
@@ -67,27 +85,107 @@
         </div>
       </section>
       
+      <!-- About Section -->
       <section class="main-section about-us">
         <div class="about-content">
           <h2 class="heading">About My Srija School</h2>
           <h4>A Unique School</h4>
-          <p>Founded in 2000, **Sri Srija EM High School** is one of the best State Board-affiliated schools in Kurnool, Andhra Pradesh. The school is co-educational and well managed by Private Unaided Unit. It runs classes from Nursery to Grade 10. The school is maintained with smart classrooms and a fully advanced setup. The library and labs are packed with abundant resources. The students can take part in various activities and events such as yoga, dance, workshops, debate, art, music, quiz, seminars, educational tours, and much more. The faculty with certified teaching professionals is there to guide the students through innovative techniques and improve their learning skills. With LEAD’s school management system, the students undergo hybrid learning and fun-based curriculum. Admissions of the candidates depend upon the decision of school management that is taken on the basis of seat availability and applicants’ marks in a written test and interview. The Sri Srija school is the best school in my opinion.</p>
+          <p>Founded in 2000, <b>Sri Srija EM High School</b> is one of the best State Board-affiliated schools in Kurnool, Andhra Pradesh. The school is co-educational and well managed by Private Unaided Unit. It runs classes from Nursery to Grade 10. The school is maintained with smart classrooms and a fully advanced setup. The library and labs are packed with abundant resources. The students can take part in various activities and events such as yoga, dance, workshops, debate, art, music, quiz, seminars, educational tours, and much more. The faculty with certified teaching professionals is there to guide the students through innovative techniques and improve their learning skills. With LEAD’s school management system, the students undergo hybrid learning and fun-based curriculum. Admissions depend upon the school management’s decision, based on seat availability and applicants’ marks in a written test and interview. The Sri Srija school is the best school in my opinion.</p>
         </div>
         <img src="college1.jpg" alt="Image of the school campus" />
       </section>
       
+      <!-- School Info / Top Performers Section -->
       <section class="main-content-row award" style="background:#f8f8f8;">
         <div class="col-3 event-card">
           <h2 class="card-heading">School Info</h2>
           <div id="info">
-            
-           <div class="prince"> <img src="https://media-hyd1-1.cdn.whatsapp.net/v/t61.24694-24/427987834_746259251004566_4394132209930320492_n.jpg?ccb=11-4&oh=01_Q5Aa2wHBtcIgohA1UWYDy5PMdmcBSUBroKols-Cz9lZ5r643VA&oe=69016A9A&_nc_sid=5e03e0&_nc_cat=111" style="width: 50%; margin-left: 25%; margin-top: 5%; border-radius: 8px;" ></div>
+            <div class="prince">
+              <img src="https://media-hyd1-1.cdn.whatsapp.net/v/t61.24694-24/427987834_746259251004566_4394132209930320492_n.jpg?ccb=11-4&oh=01_Q5Aa2wHBtcIgohA1UWYDy5PMdmcBSUBroKols-Cz9lZ5r643VA&oe=69016A9A&_nc_sid=5e03e0&_nc_cat=111" style="width: 50%; margin-left: 25%; margin-top: 5%; border-radius: 8px;">
+            </div>
             <p><b>Principal:</b> V.Sunitha Reddy</p>
             <p><b>Address:</b> R2Q8+5V3, SVR Colony</p>
             <p><b>City:</b> Kurnool, Andhra Pradesh 518006</p>
           </div>
         </div>
+
         <div class="col-3 event-card">
+          <h2 class="card-heading">School Programmes</h2>
+          <ul>
+            <li><a href="Sankalp.mp4">Samarth</a></li>
+            <li><a href="Funkranti.mp4">Fun-kranti</a></li>
+            <li><a href="SLC.jpg">Student Led Conference</a></li>
+            <li><a href="SLM.jpg">Student Led Movement</a></li>
+            <li><a href="Cat D SUMMER CAMP 24-25 Week 1_compressed.pdf">SUMMER CAMP</a></li>
+          </ul>
+        </div>
+
+        <!-- FIXED Top Performers Card -->
+        <div class="col-3 event-card news-link-card" id="top-performers">
+          <h2 class="card-heading">TOP Performers</h2>
+          <a href="SpeedLAbs.html" target="_blank" class="card-link-wrapper">
+            <marquee direction="up" scrollamount="5" behavior="scroll" class="news-list">
+              <ul>
+                <li>PG OM GAGAN</li>
+                <li>S.TARUN TEJA</li>
+                <li>PG ESHAN</li>
+              </ul>
+            </marquee>
+          </a>
+        </div>
+      </section>
+      
+      <!-- Testimonials -->
+      <section class="main-section testimonial-section">
+        <h2 class="heading" style="text-align:center;">What Parents Say About Our School</h2>
+        <div class="testimonial-row">
+          <div class="testimonial-card">
+            <img src="Parents1.jpg" alt="Parent Testimonial 1" />
+          </div>
+          <div class="testimonial-card">
+            <img src="Parents2.jpg" alt="Parent Testimonial 2" />
+          </div>
+        </div>
+      </section>
+      
+      <!-- Gallery -->
+      <section class="main-section Gallery" id="Gallery" style="background:#f8f8f8;">
+        <h2 class="heading" style="text-align:center;">Our School Gallery</h2>
+        <div id="Gallery-grid">
+          <img src="9.jpg" alt="School photo 9" />
+          <img src="8.jpg" alt="School photo 8" />
+          <img src="6.jpg" alt="School photo 6" />
+          <img src="11.jpg" alt="School photo 11" />
+          <img src="16.jpg" alt="School photo 16" />
+          <img src="18.jpg" alt="School photo 18" />
+          <img src="19.jpg" alt="School photo 19" />
+          <img src="20.jpg" alt="School photo 20" />
+          <img src="17.jpg" alt="School photo 17" />
+        </div>
+      </section>
+      
+      <!-- Footer -->
+      <footer class="main-section Contact-Us">
+        <h2 class="heading" style="text-align:center;">Contact Us & Social Media</h2>
+        <div id="media">
+          <a href="https://youtube.com/@srisrijahighschool" class="social-link" target="_blank">
+            <img src="youtube.png" alt="YouTube" />
+            <span>YouTube</span>
+          </a>
+          <a href="https://instagram.com/srisrijahigh" class="social-link" target="_blank">
+            <img src="instagram.jpeg" alt="Instagram" />
+            <span>Instagram</span>
+          </a>
+          <a href="https://m.facebook.com/people/Sri-Srija-Kurnool/100090087994716/" class="social-link" target="_blank">
+            <img src="Facebook.jpeg" alt="Facebook" />
+            <span>Facebook</span>
+          </a>
+        </div>
+        <p class="footer-copyright">&copy; 2025 Sri Srija E.M High School. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+  </html>        <div class="col-3 event-card">
           <h2 class="card-heading">School Programmes</h2>
           <ul>
             <li><a href="Sankalp.mp4">Samarth</a></li>
@@ -162,3 +260,4 @@
   </body>
 
 </html>
+
